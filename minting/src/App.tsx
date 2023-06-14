@@ -16,8 +16,8 @@ export default function App() {
    />
       
       <Container sx={{ mt: 15 }}>
-        {!isConnected && <Initialize/>}
-        {!isConnected && <Mint/>}
+        {isConnected && <Initialize/>}
+        {isConnected && <Mint/>}
    </Container>
 
   </div>
